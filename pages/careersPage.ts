@@ -74,6 +74,7 @@ export class careersPage extends abstractPage{
     }
 
     public async getCareerSideModal() {
+        await this.driver.sleep(2000);
         return await this.driver.findElement(By.className('side-modal-content-holder'));
     }
     

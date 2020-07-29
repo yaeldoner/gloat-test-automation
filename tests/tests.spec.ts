@@ -33,7 +33,7 @@ describe('tests', ()=>{
         const careersPage = await gloat.careersPage;
         await careersPage.navigate();    
         const allResults = await careersPage.allCareersResults();
-        await allResults[0].openButton?.click();
+        await allResults[0].openButton.click(); 
         const careerModal = await careersPage.getCareerSideModal();
         expect(careerModal).toBeDefined();
     });
