@@ -1,0 +1,28 @@
+{
+  "name": "gloat-test-automation",
+  "version": "1.0.0",
+  "description": "Automated web tests for gloat ",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.16.0 <13"
+  },
+  "engineStrict": true,
+  "config": {
+    "engine-strict": true
+  },
+  "scripts": {
+    "test": "jest",
+    "test:debug": "node --inspect node_modules/jest/bin/jest.js --watchAll --runInBand"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "ts-jest": "^26.1.4",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.7",
+    "@types/selenium-webdriver": "^4.0.9",
+    "jest": "^26.1.0"
+  }
+}
